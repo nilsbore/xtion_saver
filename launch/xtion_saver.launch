@@ -1,0 +1,5 @@
+<launch>
+	<include file="$(find openni_launch)/launch/openni.launch"/>
+	<node pkg="xtion_saver" type="depth_saver_node" name="depth_saver_node" output="screen"/>
+	<node pkg="xtion_saver" type="rgb_saver_node" name="rgb_saver_node" output="screen"/>
+</launch>
